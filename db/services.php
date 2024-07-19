@@ -36,3 +36,17 @@ $functions = [
         'capabilities'  => 'local/recompletion:manage'
     ],
 ];
+
+
+$services = array(
+    'Recompletion Service' => array(
+        'functions' => array(           
+            'local_recompletion_reset_course',
+        ),
+        'restrictedusers' => 1,
+        'enabled' => 1,
+        'shortname' => 'reset_course',
+        'downloadfiles' => 0,
+        'uploadfiles'  => 0
+    )
+);
